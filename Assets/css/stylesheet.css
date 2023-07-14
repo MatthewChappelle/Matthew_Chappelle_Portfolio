@@ -33,6 +33,11 @@ header {
   background-image: url("../images/city.webp");
 }
 
+.Selfie {
+  display: flex;
+  flex-direction: row;
+}
+
 nav {
   display: flex;
   flex-direction: row;
