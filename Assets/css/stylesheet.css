@@ -7,6 +7,10 @@
   cursor: url("../images/penguin.png"), auto;
 }
 
+aside img:hover {
+  cursor: url("../images/penguin2.png"), auto;
+}
+
 body {
   position: relative;
   display: flex;
