@@ -26,7 +26,7 @@ header {
   width: 100%;
   height: 120px;
   border-bottom: 10px solid darkblue;
-  background-color: lightblue;
+  background-image: url("../images/city.webp");
 }
 
 nav {
@@ -39,6 +39,7 @@ nav {
   padding: 0 0px 1px 0;
   color: darkblue;
   background-color: darkblue;
+  border-radius: 10pxgit a;
 }
 
 nav a {
@@ -59,9 +60,9 @@ main {
   flex-direction: column;
 }
 
-section div a {
+/* section div a {
   padding: 10px;
-}
+} */
 
 h1,
 h2,
@@ -70,8 +71,10 @@ h3 {
 }
 
 h1 {
-  font-size: 30px;
-  padding: 20px;
+  font-family: "Comic Sans MS";
+  font-size: 40px;
+  padding: 3px;
+  font-weight: 700;
 }
 
 h2 {
@@ -88,6 +91,13 @@ img {
   size: 50px;
 }
 
+.title {
+height: 400px;
+width: 400px;
+width: 400px;
+height: 400px;
+}
+
 section {
   padding: 15 px;
 }
@@ -98,16 +108,17 @@ section {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  min-height: 170px;
-  min-width: 170px;
-  max-width: 340px;
-  max-height: 340px;
-  
+  min-height: 270px;
+  min-width: 270px;
+  max-width: 360px;
+  max-height: 360px;
+
 }
 
 .paragraph {
   size: 80%;
   line-height: 140%;
+  padding: 0 15px;
 }
 
 .projects {
@@ -116,8 +127,17 @@ section {
   height: 200px; */
   margin: 20px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: end;
+}
+
+.titles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: aquamarine;
 }
 
 .presentation {
@@ -143,10 +163,44 @@ section {
 .footering {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: end;
+  padding: 0 15px 0 0;
 }
 
 .outsource {
   font-style: italic;
+  padding: 2px 0 2px 5px;
+}
+
+footer {
+  padding: 1px 5px;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear, fadeIn 5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
